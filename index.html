@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AndreuBeats - Géneros Musicales</title>
+  <title>AndreuBeats</title>
   <link rel="icon" href="assets/logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -11,7 +11,7 @@
 <body>
   <header>
     <div class="container header-inner">
-      <img src="assets/logo.png" alt="Logo AndreuBeats" class="logo-img">
+      <img src="assets/logo-removebg-preview.png" alt="AndreuBeats" class="logo-img">
       <h2 class="logo-text">AndreuBeats</h2>
       <nav>
         <ul>
@@ -25,103 +25,70 @@
   </header>
 
   <main>
-    <section class="intro">
-      <div class="container">
-        <h2>Bienvenido a AndreuBeats</h2>
-        <p>Esta es una web sobre música. Aquí encontrarás información sobre géneros, artistas y curiosidades musicales.</p>
+    <section id="hero">
+      <div class="container hero-content">
+        <h1>Bienvenido a AndreuBets</h1>
+        <p>Descubre la historia, géneros y curiosidades del mundo de la música.</p>
+        <div class="btn-container">
+          <a class="btn" href="tipos.html"><span>Explora los géneros</span></a>
+          <div class="hover-image"></div>
+        </div>
       </div>
     </section>
 
-    <section class="generos-header">
+    <section id="historia">
       <div class="container">
-        <h2>Géneros Musicales</h2>
-        <p>Explora los diferentes estilos y sus características únicas</p>
+        <h2>Historia de la música</h2>
+        <p>Desde los ritmos ancestrales hasta la música digital, la música ha acompañado a la humanidad en cada época.</p>
+        <figure>
+          <img src="assets/historia-musica.png" alt="Instrumentos musicales antiguos">
+          <figcaption>Instrumentos musicales a lo largo de la historia.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="generos-grid">
+    <section id="tipos-preview">
       <div class="container">
-        <article class="genero-item">
-          <img src="assets/imatge_diego.jpg" alt="Música Pop">
-          <div class="genero-content">
+        <h2>Géneros musicales</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="assets/pop.png" alt="Música pop">
             <h3>Pop</h3>
-            <div class="genero-details">
-              <aside class="caracteristicas">
-                <h4>Características principales:</h4>
-                <ul>
-                  <li>Melodías pegadizas</li>
-                  <li>Estructuras de verso-estribillo</li>
-                  <li>Producción pulida</li>
-                </ul>
-              </aside>
-              <div class="artistas">
-                <h4>Artistas destacados</h4>
-                <ul>
-                  <li>Michael Jackson</li>
-                  <li>Madonna</li>
-                  <li>Taylor Swift</li>
-                </ul>
-              </div>
-            </div>
+            <p>El género más popular, con melodías pegadizas y ritmos bailables.</p>
           </div>
-        </article>
-
-        <article class="genero-item">
-          <img src="assets/imatge_cruzzi.jpg" alt="Música Rock">
-          <div class="genero-content">
+          <div class="card">
+            <img src="assets/imatge_l'haine.jpg" alt="Música rock">
             <h3>Rock</h3>
-            <div class="genero-details">
-              <aside class="caracteristicas">
-                <h4>Características principales:</h4>
-                <ul>
-                  <li>Guitarras eléctricas</li>
-                  <li>Ritmos potentes</li>
-                  <li>Actitud rebelde</li>
-                </ul>
-              </aside>
-              <div class="artistas">
-                <h4>Artistas destacados</h4>
-                <ul>
-                  <li>Queen</li>
-                  <li>Led Zeppelin</li>
-                  <li>The Rolling Stones</li>
-                </ul>
-              </div>
-            </div>
+            <p>Guitarras eléctricas, baterías potentes y mucha energía.</p>
           </div>
-        </article>
-
-        <article class="genero-item">
-          <img src="assets/imatge_diego.jpg" alt="Música Jazz">
-          <div class="genero-content">
+          <div class="card">
+            <img src="assets/imatge_lasalle.jpg" alt="Música jazz">
             <h3>Jazz</h3>
-            <div class="genero-details">
-              <aside class="caracteristicas">
-                <h4>Características principales:</h4>
-                <ul>
-                  <li>Improvisación</li>
-                  <li>Armonías complejas</li>
-                  <li>Swing rítmico</li>
-                </ul>
-              </aside>
-              <div class="artistas">
-                <h4>Artistas destacados</h4>
-                <ul>
-                  <li>Miles Davis</li>
-                  <li>John Coltrane</li>
-                  <li>Ella Fitzgerald</li>
-                </ul>
-              </div>
-            </div>
+            <p>Improvisación, armonía y elegancia en cada nota.</p>
           </div>
-        </article>
+          <div class="card">
+            <img src="assets/imatge_cruzzi.jpg" alt="Música clásica">
+            <h3>Clásica</h3>
+            <p>Obras maestras de compositores legendarios y orquestas.</p>
+          </div>
+          <div class="card">
+            <img src="assets/imatge_ralphie.jpg" alt="Música electrónica">
+            <h3>Electrónica</h3>
+            <p>Ritmos modernos, sintetizadores y cultura de festivales.</p>
+          </div>
+          <div class="card">
+            <img src="assets/imatge_diego.jpg" alt="Hip Hop">
+            <h3>Hip Hop</h3>
+            <p>Rimas, beats y expresión urbana.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer id="contacto">
     <div class="container">
-      <p>© 2025 AndreuBeats. Todos los derechos reservados.</p>
+      <p>© 2025 AndreuBets. Todos los derechos reservados.</p>
     </div>
   </footer>
 </body>
