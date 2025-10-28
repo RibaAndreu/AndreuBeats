@@ -3,31 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AndreuBeats - Inicio</title>
+  <title>AndreuBeats</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>AndreuBeats</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Tipos</a></li>
-        <li><a href="#">Curiosidades</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="container header-inner">
+      <img src="assets/logo-web.png" alt="Logo AndreuBeats" class="logo-img">
+      <h2 class="logo-text">AndreuBeats</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tipos.html" class="active">Tipos</a></li>
+          <li><a href="curiosidades.html">Curiosidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Bienvenido a AndreuBeats</h2>
-      <p>Esta es una web sobre música. Aquí encontrarás información sobre géneros, artistas y curiosidades musicales.</p>
+    <section class="generos">
+      <div class="container">
+        <h2>Explora los géneros musicales</h2>
+        <p>Conoce los estilos más populares y su evolución a lo largo del tiempo.</p>
+
+        <article>
+          <h3>🎧 Pop</h3>
+          <p>El pop combina melodías pegadizas y letras sencillas, siendo el género más comercial.</p>
+        </article>
+
+        <article>
+          <h3>🎸 Rock</h3>
+          <p>Inspirado en la rebeldía y la libertad, el rock marcó generaciones con guitarras eléctricas y baterías potentes.</p>
+        </article>
+
+        <article>
+          <h3>🎹 Jazz</h3>
+          <p>Basado en la improvisación y la armonía, el jazz expresa libertad musical y elegancia.</p>
+        </article>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 AndreuBeats. Todos los derechos reservados.</p>
+  <footer id="contacto">
+    <div class="container">
+      <p>© 2025 AndreuBeats. Todos los derechos reservados.</p>
+    </div>
   </footer>
 </body>
 </html>
