@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AndreuBeats</title>
+  <title>AndreuBeats - Géneros Musicales</title>
+  <link rel="icon" href="assets/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <div class="container header-inner">
-      <img src="assets/logo-web.png" alt="Logo AndreuBeats" class="logo-img">
+      <img src="assets/logo.png" alt="Logo AndreuBeats" class="logo-img">
       <h2 class="logo-text">AndreuBeats</h2>
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="tipos.html" class="active">Tipos</a></li>
+          <li><a href="tipos.html">Tipos</a></li>
           <li><a href="curiosidades.html">Curiosidades</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -23,24 +25,95 @@
   </header>
 
   <main>
-    <section class="generos">
+    <section class="intro">
       <div class="container">
-        <h2>Explora los géneros musicales</h2>
-        <p>Conoce los estilos más populares y su evolución a lo largo del tiempo.</p>
+        <h2>Bienvenido a AndreuBeats</h2>
+        <p>Esta es una web sobre música. Aquí encontrarás información sobre géneros, artistas y curiosidades musicales.</p>
+      </div>
+    </section>
 
-        <article>
-          <h3>🎧 Pop</h3>
-          <p>El pop combina melodías pegadizas y letras sencillas, siendo el género más comercial.</p>
+    <section class="generos-header">
+      <div class="container">
+        <h2>Géneros Musicales</h2>
+        <p>Explora los diferentes estilos y sus características únicas</p>
+      </div>
+    </section>
+
+    <section class="generos-grid">
+      <div class="container">
+        <article class="genero-item">
+          <img src="assets/imatge_diego.jpg" alt="Música Pop">
+          <div class="genero-content">
+            <h3>Pop</h3>
+            <div class="genero-details">
+              <aside class="caracteristicas">
+                <h4>Características principales:</h4>
+                <ul>
+                  <li>Melodías pegadizas</li>
+                  <li>Estructuras de verso-estribillo</li>
+                  <li>Producción pulida</li>
+                </ul>
+              </aside>
+              <div class="artistas">
+                <h4>Artistas destacados</h4>
+                <ul>
+                  <li>Michael Jackson</li>
+                  <li>Madonna</li>
+                  <li>Taylor Swift</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </article>
 
-        <article>
-          <h3>🎸 Rock</h3>
-          <p>Inspirado en la rebeldía y la libertad, el rock marcó generaciones con guitarras eléctricas y baterías potentes.</p>
+        <article class="genero-item">
+          <img src="assets/imatge_cruzzi.jpg" alt="Música Rock">
+          <div class="genero-content">
+            <h3>Rock</h3>
+            <div class="genero-details">
+              <aside class="caracteristicas">
+                <h4>Características principales:</h4>
+                <ul>
+                  <li>Guitarras eléctricas</li>
+                  <li>Ritmos potentes</li>
+                  <li>Actitud rebelde</li>
+                </ul>
+              </aside>
+              <div class="artistas">
+                <h4>Artistas destacados</h4>
+                <ul>
+                  <li>Queen</li>
+                  <li>Led Zeppelin</li>
+                  <li>The Rolling Stones</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </article>
 
-        <article>
-          <h3>🎹 Jazz</h3>
-          <p>Basado en la improvisación y la armonía, el jazz expresa libertad musical y elegancia.</p>
+        <article class="genero-item">
+          <img src="assets/imatge_diego.jpg" alt="Música Jazz">
+          <div class="genero-content">
+            <h3>Jazz</h3>
+            <div class="genero-details">
+              <aside class="caracteristicas">
+                <h4>Características principales:</h4>
+                <ul>
+                  <li>Improvisación</li>
+                  <li>Armonías complejas</li>
+                  <li>Swing rítmico</li>
+                </ul>
+              </aside>
+              <div class="artistas">
+                <h4>Artistas destacados</h4>
+                <ul>
+                  <li>Miles Davis</li>
+                  <li>John Coltrane</li>
+                  <li>Ella Fitzgerald</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </article>
       </div>
     </section>
