@@ -176,3 +176,30 @@ nav a:hover, nav a:focus {
     z-index: 2;
 }
 
+#historia {
+    padding: 60px 0;
+    background: linear-gradient(90deg, #f3e5f5 0%, #fffde7 100%);
+    text-align: center;
+}
+#historia h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: #8e24aa;
+}
+#historia p {
+    max-width: 700px;
+    margin: 0 auto 24px auto;
+    color: #3949ab;
+}
+#historia figure img {
+    max-width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 2px 12px rgba(142,36,170,0.12);
+}
+#historia figcaption {
+    font-size: 1rem;
+    color: #8e24aa;
+    margin-top: 12px;
+}
+
