@@ -203,3 +203,141 @@ nav a:hover, nav a:focus {
     margin-top: 12px;
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.card {
+    background: linear-gradient(120deg, #fffde7 0%, #f3e5f5 100%);
+    padding: 32px 24px;
+    border-radius: 32px;
+    box-shadow: 0 4px 16px rgba(142,36,170,0.10);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    border: 2px solid #8e24aa22;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.04) translateY(-6px);
+    box-shadow: 0 8px 32px rgba(142,36,170,0.18);
+    border-color: #8e24aa;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius:8px;
+    margin-bottom:16px;
+    background-color: #e9ecef;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #3949ab;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+/* Estilos para la página de géneros */
+.generos-header {
+    background: linear-gradient(120deg, #8e24aa 0%, #3949ab 100%);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.generos-header h1 {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffeb3b;
+}
+.generos-header h2 {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffeb3b;
+}
+
+.generos-grid {
+    padding: 60px 0;
+    background: linear-gradient(90deg, #f3e5f5 0%, #fffde7 100%);
+}
+
+.genero-item {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 16px rgba(142,36,170,0.10);
+}
+
+.genero-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.genero-content {
+    padding: 24px;
+}
+
+.genero-content h3 {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    color: #8e24aa;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.genero-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.caracteristicas, .artistas {
+    background: #f3e5f5;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.genero-details h4 {
+    color: #3949ab;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.genero-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.genero-details li {
+    margin: 8px 0;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+footer {
+    background: linear-gradient(90deg, #8e24aa 0%, #3949ab 100%);
+    color: #ffeb3b;
+    text-align: center;
+    padding: 32px 0;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 12px rgba(142,36,170,0.12);
+}
+
