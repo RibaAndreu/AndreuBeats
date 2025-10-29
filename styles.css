@@ -102,5 +102,77 @@ nav a:hover, nav a:focus {
 
 #hero p { 
     font-size:1.2rem; margin-bottom:24px; 
-
 }
+
+.btn-container {
+    position: relative;
+    display: inline-block;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #3949ab 0%, #8e24aa 100%);
+    color: #fff;
+    font-weight: 700;
+    padding: 16px 32px;
+    border-radius: 32px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 12px rgba(142,36,170,0.12);
+    transition: all 0.3s;
+    position: relative;
+    z-index: 2;
+}
+
+.btn:hover {
+    color: #ffeb3b;
+    background: linear-gradient(90deg, #8e24aa 0%, #3949ab 100%);
+    text-shadow: 0 2px 8px rgba(142,36,170,0.2);
+    box-shadow: 0 4px 24px rgba(142,36,170,0.18);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+
+.hover-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/pop.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 32px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    box-shadow: 0 4px 24px rgba(142,36,170,0.18);
+    border: 4px solid #ffeb3b;
+}
+
+.btn-container:hover .hover-image {
+    opacity: 1;
+}
+
+.btn-container:hover .btn::before {
+    opacity: 1;
+}
+
+.btn span {
+    position: relative;
+    z-index: 2;
+}
+
