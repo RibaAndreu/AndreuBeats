@@ -366,3 +366,56 @@ footer {
     color: #ffeb3b;
 }
 
+.header-image {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.details-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.curiosidades-container {
+    padding: 60px 0;
+    background: linear-gradient(90deg, #f3e5f5 0%, #fffde7 100%);
+}
+
+.curiosidad-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.curiosidad-item {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 16px rgba(142,36,170,0.10);
+}
+
+.curiosidad-content h3 {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    color: #8e24aa;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.curiosidad-content time {
+    color: #3949ab;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
