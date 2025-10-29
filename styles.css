@@ -1,94 +1,59 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body {
+    height: 100%;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 body {
-  font-family: 'Montserrat', 'Roboto', sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
-  line-height: 1.6;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container { 
+    width:90%; 
+    max-width:1100px; 
+    margin:0 auto; 
+    padding:16px; 
 }
 
 header {
-  background: linear-gradient(90deg, #8e24aa 0%, #3949ab 100%);
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    background: linear-gradient(90deg, #8e24aa 0%, #3949ab 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(142,36,170,0.12);
 }
 
-header h1 {
-  font-size: 2.5em;
-  color: #ffeb3b;
-  margin-bottom: 10px;
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px 0;
+    gap: 24px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+.logo-img {
+    height: 48px;
+    width: auto;
+    margin-right: 12px;
+    display: block;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 6px;
-  transition: background 0.3s;
+.logo-text {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffeb3b;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(142,36,170,0.2);
 }
 
-nav a:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-main {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-main h2 {
-  font-size: 2em;
-  color: #8e24aa;
-  margin-bottom: 20px;
-}
-
-main p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.1em;
-  color: #3949ab;
-}
-
-footer {
-  background: linear-gradient(90deg, #8e24aa 0%, #3949ab 100%);
-  color: #ffeb3b;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 1rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2em;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  main h2 {
-    font-size: 1.6em;
-  }
-
-  main p {
-    font-size: 1em;
-  }
-}
