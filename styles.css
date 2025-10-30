@@ -505,3 +505,27 @@ footer {
     line-height: 1.4;
 }
 
+@media (max-width: 768px) {
+    .genero-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .datos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .curiosidad-content h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:768px){
+  #hero h1 { font-size:32px; }
+  #hero p { font-size:1rem; }
+  .header-inner { flex-direction:column; gap:12px; }
+  nav ul { flex-direction:column; align-items:center; gap:8px; }
+}
+@media (max-width:480px){
+  #hero { padding:60px 0; }
+  .btn { padding:12px 20px; font-size:0.9rem; }
+}
