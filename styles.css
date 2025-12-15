@@ -654,3 +654,34 @@ footer .footer-form {
   opacity: 0.7;
   pointer-events: none;
 }
+
+.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark header {
+    background: linear-gradient(90deg, #2e7d32 0%, #1565c0 100%);
+}
+
+.dark #hero {
+    background: linear-gradient(120deg, #1565c0 0%, #ff7043 100%);
+}
+
+.dark .logo-text { color: #ff7043; }
+
+.dark .btn {
+    background: linear-gradient(90deg, #1565c0 0%, #2e7d32 100%);
+}
+
+.dark .btn:hover {
+    background: linear-gradient(90deg, #2e7d32 0%, #1565c0 100%);
+    color: #ff7043;
+}
+
+.dark .card h3,
+.dark .card p,
+.dark .genero-item h3,
+.dark .genero-item p {
+    color: #000;
+}

@@ -46,3 +46,5 @@ document.getElementById('contacto-form')?.addEventListener('submit', e => {
     f.reset();
   }, 600);
 });
+
+document.getElementById('modo-btn')?.addEventListener('click', () => document.body.classList.toggle('dark'));
