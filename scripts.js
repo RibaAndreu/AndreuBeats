@@ -33,14 +33,14 @@ document.getElementById('contacto-form')?.addEventListener('submit', e => {
     return;
   }
 
-  btn?.classList.add('sending');
+  btn?.classList.add('enviando');
   feedback.textContent = 'Enviando…';
-  feedback.classList.add('sending');
+  feedback.classList.add('enviando');
 
   feedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
   setTimeout(() => {
-    btn?.classList.remove('sending');
+    btn?.classList.remove('enviando');
     feedback.textContent = `✅ Gracias, ${nombre}. Mensaje enviado correctamente`;
     feedback.className = 'form-feedback ok';
     f.reset();
