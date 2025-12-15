@@ -91,14 +91,16 @@
       <p><strong>Andreu Riba</strong></p>
       <p><a href="mailto:andreu.riba@gracia.lasalle.com" style="color:#ffeb3b; text-decoration:underline;">andreu.riba@gracia.lasalle.com</a></p>
     </div>
-    <form id="contacto-form" class="footer-form">
+    <form id="contacto-form" class="footer-form" novalidate>
       <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
       <input type="email" id="email" name="email" placeholder="Tu email" required>
       <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
-      <button type="submit">Enviar</button>
+      <div class="form-feedback" role="status" aria-live="polite"></div>
+      <button type="submit" class="btn-submit"><span class="btn-text">Enviar</span><span class="spinner" aria-hidden="true"></span></button>
     </form>
       <p>© 2025 AndreuBets. Todos los derechos reservados.</p>
     </div>
-  </footer>
+</footer>
+<script src="scripts.js" defer></script>
 </body>
 </html>
